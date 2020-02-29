@@ -1,4 +1,16 @@
+# `#` Software rasterizer
 
+Changes
+
+* moved the X11 dependend `window.h` and `window.c` to `test`
+* added an envelope header `swrast.h` file
+* renamed `libraster.a` to `libswrast.a`
+* added a small error message, if `a.out` can't find the `teapot.3ds` file
+
+
+Here is the original README:
+
+```
   About
   *****
 
@@ -123,4 +135,5 @@
  All source code in this directory is released into the public domain.
  I, David Oberhollenzer, will not assert any copyright claims on the
  documents in this directory.
+```
 

@@ -10,16 +10,16 @@ all: a.out subpixel benchmark
 clean:
 	$(RM) a.out subpixel benchmark *.o
 
-a.out: test.o 3ds.o ../main/libraster.a
+a.out: test.o 3ds.o window.o ../main/libswrast.a
 	$(CC) $^ -lX11 -lm -o $@
 
-subpixel: subpixel.o ../main/libraster.a
+subpixel: subpixel.o window.o ../main/libswrast.a
 	$(CC) $^ -lX11 -lm -o $@
 
-benchmark: benchmark.o 3ds.o ../main/libraster.a
+benchmark: benchmark.o 3ds.o ../main/libswrast.a
 	$(CC) $^ -lX11 -lm -o $@
 
-../main/libraster.a:
+../main/libswrast.a:
 	$(MAKE) -C ../main
 
 # test program source
@@ -35,3 +35,7 @@ benchmark.o: test.c 3ds.h ../main/include/inputassembler.h \
 subpixel.o: subpixel.c ../main/include/context.h \
 		../main/include/framebuffer.h \
 		../main/include/inputassembler.h ../main/include/vector.h
+window.o: window.c ../main/include/context.h \
+		../main/include/framebuffer.h \
+		../main/include/inputassembler.h ../main/include/vector.h \
+		window.h

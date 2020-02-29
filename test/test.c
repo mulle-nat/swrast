@@ -11,6 +11,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 #define WIDTH 1024
 #define HEIGHT 768
@@ -102,7 +103,11 @@ int main( void )
 		return EXIT_FAILURE;
 
 	teapot = load_3ds("teapot.3ds");
-
+   if( ! teapot)
+   {
+      fprintf( stderr, "Could not load \"teapot.3ds\"\n");
+      return EXIT_FAILURE;
+   }
 	context_init(&ctx);
 
 	/* intialize projection matrix */

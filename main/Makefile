@@ -4,15 +4,15 @@ CFLAGS = -ansi -pedantic -Wall -Wextra -Iinclude $(CONFFLAGS) $(OPTFLAGS)\
 		-Wno-unused-function
 
 .PHONY: all
-all: libraster.a
+all: libswrast.a
 
 .PHONY: clean
 clean:
-	$(RM) libraster.a -r obj
+	$(RM) libswrast.a -r obj
 
-libraster.a: obj/inputassembler.o obj/framebuffer.o \
+libswrast.a: obj/inputassembler.o obj/framebuffer.o \
 		obj/texture.o obj/shader.o obj/context.o \
-		obj/rasterizer.o obj/window.o
+		obj/rasterizer.o
 	$(AR) rcs $@ $^
 	ranlib $@
 
@@ -38,5 +38,3 @@ obj/texture.o: src/texture.c include/texture.h include/predef.h\
 obj/shader.o: src/shader.c include/shader.h include/rasterizer.h\
 			include/predef.h include/context.h include/config.h\
 			include/vector.h include/color.h
-
-obj/window.o: src/window.c include/window.h include/framebuffer.h
