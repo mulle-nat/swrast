@@ -1,5 +1,5 @@
-#ifndef VECTOR_H
-#define VECTOR_H
+#ifndef SWRAST_VECTOR_H
+#define SWRAST_VECTOR_H
 
 #include "predef.h"
 #include <math.h>

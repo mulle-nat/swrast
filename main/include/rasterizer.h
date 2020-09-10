@@ -3,8 +3,8 @@
  *
  * \brief Contains the rasterizer stage interface
  */
-#ifndef RASTERIZER_H
-#define RASTERIZER_H
+#ifndef SWRAST_RASTERIZER_H
+#define SWRAST_RASTERIZER_H
 
 #include "predef.h"
 #include "config.h"

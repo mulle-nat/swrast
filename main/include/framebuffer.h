@@ -3,8 +3,8 @@
  *
  * \brief Contains a frame buffer object implementation
  */
-#ifndef FRAMEBUFFER_H
-#define FRAMEBUFFER_H
+#ifndef SWRAST_FRAMEBUFFER_H
+#define SWRAST_FRAMEBUFFER_H
 
 #include "predef.h"
 #include "config.h"

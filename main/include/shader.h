@@ -3,8 +3,8 @@
  *
  * \brief Contians shader functions
  */
-#ifndef SHADER_H
-#define SHADER_H
+#ifndef SWRAST_SHADER_H
+#define SWRAST_SHADER_H
 
 #include "predef.h"
 

@@ -3,8 +3,8 @@
  *
  * \brief Forward declerations of structures
  */
-#ifndef PREDEF_H
-#define PREDEF_H
+#ifndef SWRAST_PREDEF_H
+#define SWRAST_PREDEF_H
 
 typedef struct texture texture;
 typedef struct framebuffer framebuffer;

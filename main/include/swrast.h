@@ -1,3 +1,6 @@
+#ifndef SWRAST_H
+#define SWRAST_H
+
 #include "predef.h"
 #include "config.h"
 
@@ -11,4 +14,6 @@
 #include "rasterizer.h"
 #include "inputassembler.h"
 #include "context.h"
+
+#endif
 

@@ -1,5 +1,5 @@
-#ifndef COLOR_H
-#define COLOR_H
+#ifndef SWRAST_COLOR_H
+#define SWRAST_COLOR_H
 
 #include <stdint.h>
 

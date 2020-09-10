@@ -3,8 +3,8 @@
  *
  * \brief Contains the texture object implementation
  */
-#ifndef TEXTURE_H
-#define TEXTURE_H
+#ifndef SWRAST_TEXTURE_H
+#define SWRAST_TEXTURE_H
 
 #include "predef.h"
 

@@ -3,8 +3,8 @@
  *
  * \brief Contains preprocessor defined configuration of the rasterizer
  */
-#ifndef CONFIG_H
-#define CONFIG_H
+#ifndef SWRAST_CONFIG_H
+#define SWRAST_CONFIG_H
 
 #define MAX_TEXTURES 1
 #define MAX_LIGHTS 8

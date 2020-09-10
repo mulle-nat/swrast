@@ -3,8 +3,8 @@
  *
  * \brief Contains the rasterizer input assembler stage interface
  */
-#ifndef INPUT_ASSEMBLER_H
-#define INPUT_ASSEMBLER_H
+#ifndef SWRAST_INPUT_ASSEMBLER_H
+#define SWRAST_INPUT_ASSEMBLER_H
 
 #include "predef.h"
 

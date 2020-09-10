@@ -3,8 +3,8 @@
  *
  * \brief Contains the rendering context implementation
  */
-#ifndef CONTEXT_H
-#define CONTEXT_H
+#ifndef SWRAST_CONTEXT_H
+#define SWRAST_CONTEXT_H
 
 #include "predef.h"
 #include "config.h"
